@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Pricing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            height: 100vh;
+        }
+        .pricing-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            grid-template-columns: repeat(auto-fit, 100%)
+        }
+        .pricing-table {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 280px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .pricing-table:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+        .pricing-title {
+            font-size: 26px;
+            font-weight: bold;
+            color: #333;
+        }
+        .pricing-price {
+            font-size: 36px;
+            color: #007BFF;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        .pricing-list {
+            list-style: none;
+            padding: 0;
+            color: #666;
+            font-size: 16px;
+        }
+        .pricing-list li {
+            padding: 8px 0;
+        }
+        .pricing-button {
+            background: #007BFF;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease-in-out;
+        }
+        .pricing-button:hover {
+            background:rgb(227, 229, 231);
+        }
+        @media screen and (max-width: 900px) {
+            .pricing-container{
+                display: grid;
+                border: 1px solid;
+                grid-template-columns: repeat(auto-fit, 100%);
+                gap: 20px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-table">
+            <div class="pricing-title">Basic</div>
+            <div class="pricing-price">$10/month</div>
+            <ul class="pricing-list">
+                <li>10GB Storage</li>
+                <li>1 User</li>
+                <li>Email Support</li>
+            </ul>
+            <button class="pricing-button">Purchase</button>
+        </div>
+        <div class="pricing-table">
+            <div class="pricing-title">Standard</div>
+            <div class="pricing-price">$20/month</div>
+            <ul class="pricing-list">
+                <li>50GB Storage</li>
+                <li>5 Users</li>
+                <li>Priority Support</li>
+            </ul>
+            <button class="pricing-button">Purchase</button>
+        </div>
+        <div class="pricing-table">
+            <div class="pricing-title">Premium</div>
+            <div class="pricing-price">$50/month</div>
+            <ul class="pricing-list">
+                <li>200GB Storage</li>
+                <li>Unlimited Users</li>
+                <li>24/7 Support</li>
+            </ul>
+            <button class="pricing-button">Purchase</button>
+        </div>
+    </div>
+</body>
+</html>
