@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #007bff, #f4f4f4);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .news-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10 15px rgba(0,0,0,0.1);
+            width: 80%;
+        }
+        .item{
+            display: flex;
+            margin: 20px 20px 30px 20px;
+            gap: 20px;
+        }
+        .content{
+            flex: 1;
+        }
+        img{
+            width: 150px;
+            height: 100px;
+            color: gray;
+        }
+        .title{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .meta{
+            font-size: 12px;
+            color: gray;
+        }
+        .button{
+            background-color: #007bff;
+            color: white;
+            font-size: 12px;
+            border-radius: 5px;
+            padding: 5px 10px;
+            border: none;
+            transition: background 0.3s ease-in-out;
+        }
+        .button:hover{
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="news-container">
+            <h2>Rekomendasi Lokasi Wisata</h2>
+            <div class="item">
+                <div class="img"><img class="img" src="Danau Toba.jpg" alt=""></div>
+                <div class="content">
+                    <div class="title">Danau Toba</div>
+                    <div class="meta">1000 views | 345 comment</div>
+                    <p>Tempat yang asri dan sejuk untuk liburan</p>
+                    <button class="button">Read More</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img"><img class="img" src="Danau Toba.jpg" alt=""></div>
+                <div class="content">
+                    <div class="title">Danau Toba</div>
+                    <div class="meta">1000 views | 345 comment</div>
+                    <p>Tempat yang asri dan sejuk untuk liburan</p>
+                    <button class="button">Read More</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img"><img class="img" src="Danau Toba.jpg" alt=""></div>
+                <div class="content">
+                    <div class="title">Danau Toba</div>
+                    <div class="meta">1000 views | 345 comment</div>
+                    <p>Tempat yang asri dan sejuk untuk liburan</p>
+                    <button class="button">Read More</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img"><img class="img" src="Danau Toba.jpg" alt=""></div>
+                <div class="content">
+                    <div class="title">Danau Toba</div>
+                    <div class="meta">1000 views | 345 comment</div>
+                    <p>Tempat yang asri dan sejuk untuk liburan</p>
+                    <button class="button">Read More</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img"><img class="img" src="Danau Toba.jpg" alt=""></div>
+                <div class="content">
+                    <div class="title">Danau Toba</div>
+                    <div class="meta">1000 views | 345 comment</div>
+                    <p>Tempat yang asri dan sejuk untuk liburan</p>
+                    <button class="button">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
